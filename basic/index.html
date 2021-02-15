@@ -13,7 +13,19 @@
       myArr.push('99');
       myArr.pop(99);
       console.log(myName);
-
+      let obj = {
+        name: 'Shrawani Singh',
+        address: 'Banglore',
+      };
+      console.log(obj);
+      console.log(obj.name); //name
+      console.log(obj.address); //address
+      obj.pinCode = 8876686; //re-assing const obj
+      //deep, shallow
+      const newObj = {};
+      newObj.status = 'ORDERED';
+      obj = newObj;
+      console.log('reasigned obj', obj);
       function whatIsMyName() {
         const newBoy = 'RAj';
         console.log('myName', myName);
@@ -22,7 +34,7 @@
         console.log(myArr);
       }
       whatIsMyName();
-      console.log('newBoy out of fuction', newBoy);
+      //   console.log('newBoy out of fuction', newBoy);
     </script>
   </head>
   <body></body>

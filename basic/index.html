@@ -6,35 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script>
-      var myName = 'Rohit';
-      let newName = 'Shra.';
-      const surname = 'Singh';
-      const myArr = [1, 2, 3, 3];
-      myArr.push('99');
-      myArr.pop(99);
-      console.log(myName);
-      let obj = {
-        name: 'Shrawani Singh',
-        address: 'Banglore',
-      };
-      console.log(obj);
-      console.log(obj.name); //name
-      console.log(obj.address); //address
-      obj.pinCode = 8876686; //re-assing const obj
-      //deep, shallow
-      const newObj = {};
-      newObj.status = 'ORDERED';
-      obj = newObj;
-      console.log('reasigned obj', obj);
-      function whatIsMyName() {
-        const newBoy = 'RAj';
-        console.log('myName', myName);
-        console.log('newName', newName);
-        console.log('surname', surname);
-        console.log(myArr);
-      }
-      whatIsMyName();
-      //   console.log('newBoy out of fuction', newBoy);
+      let obj = {}; // object 1
+      obj.name = 'Rohit';
+      obj.surname = 'Sharma';
+      console.log('obj is ', obj);
+
+      const newObj = {}; //object 2
+      newObj.status = 'PENDING';
+
+      obj = newObj; //assigned obj2 to obj1
+
+      console.log('re-assigned', obj); // 
+
+      newObj.status = 'DELIVERED'; //chagning data to obj2
+
+
+      console.log('newObj status changed', newObj);
+      console.log('re print obj', obj);
     </script>
   </head>
   <body></body>

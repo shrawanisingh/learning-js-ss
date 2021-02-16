@@ -6,24 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script>
-      let obj = {}; // object 1
-      obj.name = 'Rohit';
-      obj.surname = 'Sharma';
-      console.log('obj is ', obj);
+      let myArr = [1, 2, 9, 8];
 
-      const newObj = {}; //object 2
-      newObj.status = 'PENDING';
+      const myIteration = function (dipu, myIndex) {
+        console.log('each Elem via forEach', dipu, myIndex);
+      };
 
-      obj = newObj; //assigned obj2 to obj1
+      // for (let i = 0; i < myArr.length; i++) {
+      //   console.log('Each element', myArr[i], i);
+      //   // myIteration(i);
+      // }
 
-      console.log('re-assigned', obj); // 
+      // myArr.forEach(myIteration);
+      const numArr = [1, 2, 3, 4]; // source
+      // [2, 4, 6, 8]; // output should be
 
-      newObj.status = 'DELIVERED'; //chagning data to obj2
+      const doubleFunc = function (num) {
+        return num * 2;
+      };
 
-
-      console.log('newObj status changed', newObj);
-      console.log('re print obj', obj);
+      const doubledArr = numArr.map(doubleFunc);
+      console.log('doubledArr is ', doubledArr);
     </script>
   </head>
   <body></body>
 </html>
+
+function abc() {} abc(); function myFunc(abc) { console.log(abc); } myFunc(abc);
+var abc = 45

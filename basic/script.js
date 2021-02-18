@@ -44,3 +44,4 @@ const arr3 = [1, 2, 3, 5, 8];
 for (let value of arr3) {
   console.log(value);
 }
+//----------------------

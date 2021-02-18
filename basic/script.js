@@ -8,9 +8,13 @@ const returnArr = arr.filter(function (eachElem) {
 
 const arr2 = ['Rohit', 'Dipu', 'Badmash'];
 
-const returnArr2 = arr2.filter(function (eachElem) {
-  return eachElem === 'Badmash';
-});
+// const returnArr2 = arr2.filter(
+//     function (eachElem) {
+//        return eachElem === 'Badmash';
+//     }
+// );
+
+const returnArr2 = arr2.filter((eachElem) => eachElem === 'Badmash');
 
 // console.log(returnArr2);
 
@@ -29,6 +33,14 @@ const person = {
   location: 'Bihar',
 };
 
-for (key in person) {
+for (let key in person) {
   console.log(person[key]);
+}
+
+// For of
+
+const arr3 = [1, 2, 3, 5, 8];
+
+for (let value of arr3) {
+  console.log(value);
 }

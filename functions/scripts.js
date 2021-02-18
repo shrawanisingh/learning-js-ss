@@ -1,27 +1,13 @@
-let girl = 'Dipu';
-// let girl = 'Rohit';
+const age = 20;
 
-function getGirlName() {
-  let girl = 'Leela';
-  //   let girl = 'Pinky'; // error
-  let boy = 'Raj';
-  return girl;
-}
-console.log(girl);
+const changeAge = () => {
+  const age = 30;
+  console.log(age);
 
-function getCommonName() {
-  let girl = 'Rinky';
-  console.log(girl);
-}
-getCommonName();
-console.log(getGirlName());
+  return function getAge() {
+    return age * 2;
+  };
+};
 
-let name1 = 'Rohit';
-
-function changeName(name1) {
-  let name1 = 'Babu';
-}
-
-changeName(name1);
-
-console.log(name1);
+changeAge();
+console.log(changeAge()());
